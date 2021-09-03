@@ -1,10 +1,11 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native';
 
+
 export default function Splash({ navigation }) {
 
     setInterval(() => {
-        navigation.replace('messages');
+        navigation.replace('onboarding');
     }, 2400)
 
     return (
@@ -16,12 +17,14 @@ export default function Splash({ navigation }) {
     )
 }
 
+
 export function SplashHeader() {
     return (
         <View style={styles.header}>
         </View>
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {
