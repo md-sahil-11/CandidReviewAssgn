@@ -26,13 +26,6 @@ const OnboardingScreen = ({ navigation }) => {
 }
 
 
-export function OnboardingHeader() {
-    return (
-        <View style={styles.header}></View>
-    )
-}
-
-
 const styles = StyleSheet.create({
     header: {
         flex: 1,
