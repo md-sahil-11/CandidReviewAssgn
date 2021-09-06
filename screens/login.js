@@ -1,21 +1,11 @@
 import React, { useState } from 'react'
 import { View, TextInput, StyleSheet, TouchableOpacity, Text } from 'react-native'
 
-export default function Register({navigation}) {
+export default function Login({navigation}) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
     return (
         <View style={styles.container}>
-            <View style={styles.inputView}>
-                <TextInput
-                    style={styles.textInput}
-                    placeholder="Name"
-                    placeholderTextColor="#000000"
-                    onChangeText={(name) => setName(name)}
-                />
-            </View>
-
             <View style={styles.inputView}>
                 <TextInput
                     style={styles.textInput}
@@ -35,13 +25,15 @@ export default function Register({navigation}) {
                 />
             </View>
             <TouchableOpacity onPress={() => {
-                navigation.replace('login');
+                navigation.replace('register');
             }}>
-                <Text style={styles.forgotButton}>Already have an account? <Text style={{color: '#0099ff'}}>Login.</Text></Text>
+                <Text style={styles.forgotButton}>Don't have an account? <Text style={{color: '#0099ff'}}>Register.</Text></Text>
             </TouchableOpacity>
-
+            {/* <TouchableOpacity>
+                <Text style={styles.forgotButton}>Forgot Password?</Text>
+            </TouchableOpacity> */}
             <TouchableOpacity style={styles.loginBtn}>
-                <Text>SIGN UP</Text>
+                <Text>SIGN IN</Text>
             </TouchableOpacity>
         </View>
     );

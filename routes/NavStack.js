@@ -3,7 +3,7 @@ import { createAppContainer } from  'react-navigation';
 import Register from '../screens/register';
 import Splash from '../screens/splash';
 import OnboardingScreen from '../screens/onboarding';
-
+import Login from '../screens/login';
 
 const screens = {
     splash: {
@@ -20,6 +20,12 @@ const screens = {
     },
     register: {
         screen: Register,
+        navigationOptions: {
+            headerShown: false,
+        },
+    },
+    login: {
+        screen: Login,
         navigationOptions: {
             headerShown: false,
         },
