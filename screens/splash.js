@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Animated, StyleSheet, View, Easing, Image } from 'react-native';
+import { Animated, StyleSheet, View, Easing } from 'react-native';
 
 
 export default function Splash({ navigation }) {
@@ -18,7 +18,7 @@ export default function Splash({ navigation }) {
 
     setInterval(() => {
         navigation.replace('onboarding');
-    }, 2400)
+    }, 2000)
 
     return (
         <View style={styles.container}>
@@ -42,7 +42,7 @@ export default function Splash({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#4169e1',
+        backgroundColor: '#121a27',
         alignItems: 'center',
         justifyContent: 'center',
     },

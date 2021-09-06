@@ -1,8 +1,7 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from  'react-navigation';
-import Login from '../screens/login';
-import Splash, { SplashHeader } from '../screens/splash';
-import React from 'react';
+import Register from '../screens/register';
+import Splash from '../screens/splash';
 import OnboardingScreen from '../screens/onboarding';
 
 
@@ -19,7 +18,12 @@ const screens = {
             headerShown: false,
         },
     },
-    
+    register: {
+        screen: Register,
+        navigationOptions: {
+            headerShown: false,
+        },
+    }
 }
 
 
