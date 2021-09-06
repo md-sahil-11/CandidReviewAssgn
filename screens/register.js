@@ -41,7 +41,7 @@ export default function Register({navigation}) {
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.loginBtn}>
-                <Text>SIGN UP</Text>
+                <Text>REGISTER</Text>
             </TouchableOpacity>
         </View>
     );
